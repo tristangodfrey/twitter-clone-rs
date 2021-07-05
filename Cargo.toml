@@ -1,0 +1,23 @@
+[package]
+name = "twitter-clone"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = { version = "0.5.0-rc.1", features = ["json", "tls"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_cbor = "0.11"
+base64 = "0.13"
+webauthn-rs = "0.3.0-alpha.7"
+async-std = "1.9.0"
+lru = "0.6.5"
+mockall = "0.10"
+mockall_double = "0.2"
+
+[dependencies.rocket_contrib]
+version = "0.4.10"
+default-features = false
+features = ["serve"]
